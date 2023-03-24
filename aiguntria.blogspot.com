@@ -1,5 +1,5 @@
 [InternetShortcut]
-URL=http://gerakanopensource.wordpress.com/
+URL=http://aiguntria.bolgspot.com/
 HotKey=0
 IDList=
 IconFile=C:\Windows\System32\shell32.dll
