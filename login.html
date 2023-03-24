@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SMP PGRI 1 Kotaagung</title>
+<meta http-equiv="expires" content="-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img\favicon.png">
+<link rel="apple-touch-icon" href="img\favicon.png">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="jquery/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/sb-admin-2.css" rel="stylesheet">
+<style type="text/css">
+body {
+background-image: url(img/small-bg.jpg);
+background-size: cover;
+}
+@media only screen and (min-device-width: 500px){
+body{
+background-image: url(img/bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+}
+</style>
+</head>
+<body>
+<!-- 
+======================================================
+created     : Lalat Merah
+situs       : gerakanopensource.wordpress.com
+whatsapp    : 082-120-215-248
+ig          : @alpuketmerah
+====================================================== 
+-->
+$(if chap-id)
+<form name="sendin" action="$(link-login-only)" method="post">
+<input type="hidden" name="username" />
+<input type="hidden" name="password" />
+<input type="hidden" name="dst" value="$(link-orig)" />
+<input type="hidden" name="popup" value="true" />
+</form>
+
+<script type="text/javascript" src="/md5.js"></script>
+<script type="text/javascript">
+<!--
+function doLogin() {
+document.sendin.username.value = document.login.username.value;
+document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+document.sendin.submit();
+return false;
+}
+//-->
+</script>
+$(endif)
+<div class="navbar-default navbar navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand"style="color: #31708f;" href="login.html">SMP PGRI 1 Kotaagung</a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="login.html">Login <span class="sr-only">(current)</span></a></li>
+<li><a href="status.html">Status</a></li>
+<!--li><a href="paket.html">Paket</a></li-->
+<li><a href="about.html">Tentang Hotspot</a></li>
+<li><a href="service.html">Layanan</a></li>
+<li><a href="contact.html">Kontak</a></li>
+<li><a href="logout.html?erase-cookie=true">Logout</a></li>
+</ul>   
+</div>
+</div>
+</div>
+</br></br></br>
+<div class="container"> 
+<div id="wrapper">
+<div id="page-content-wrapper">
+<div class="container-fluid">                         
+<div class="row" style="margin-bottom: 15px; margin-top: 10px;">       <!--panel -->
+<div class="panel-body" style="background-color: white; border: 1px solid #ddd; border-radius: 4px;">
+<center>
+<div class="alert alert-info" style="padding: 1px;"><h3>SMP PGRI HOTSPOT</h3></div>
+</center>
+<div class="col-md-6 col-sm-12">
+<div class="row">
+$(if error)
+<div class="alert alert-danger">Terjadi kesalahan: $(error)</div>
+$(endif)
+<div class="alert alert-success">Selamat Datang di Layanan SMP PGRI Hotspot. </br> Silahkan login dulu untuk menikmati akses layanan internet berbasis hotspot.</div>
+</div>
+<div class="row">            
+<div class="panel panel-default">
+<div class="panel-body">
+<form id="loginForm" class="form-horizontal" role="form" action="$(link-login-only)" method="post">
+<input type="hidden" name="dst" value="$(link-orig)"/>
+<input type="hidden" name="popup" value="true"/>
+<div class="form-group">
+<label for="inputLogin" class="col-sm-2 control-label">Username</label>
+<div class="col-sm-10">
+<input type="text" class="form-control input-lg" id="inputLogin" name="username" placeholder="Username" autofocus required>
+</div>
+</div>
+<div class="form-group">
+<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control input-lg" id="inputPassword" name="password" placeholder="Password" required>
+</div>
+</div>                           
+<div style="color: #a1a1a1; font-size: 12px">Belum mempunyai akun hotspot, <a href="about.html">Klik Disini</a></div>
+</br>
+<div class="form-group">
+<div class="col-sm-offset-0 col-sm-12">
+<button type="submit" class="btn btn-success btn-block btn-lg">LOGIN</button>
+</div>
+</div>
+<center>
+<div  class="alert alert-success">Gunakan Internet Dengan Bijak !
+<div style="color: #a1c1c1; font-size: 10px">Powered by Aray</div>
+</div>
+</center>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<div class="panel panel-default" style="margin-bottom: 10px;">
+<div class="panel-body">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+<div class="item active">
+<img src="img/1.jpg" alt="Ical RedHat" style="width:100%; border-radius: 4px;">
+<div class="carousel-caption">
+<h3></h3>
+<p></p>
+</div>
+</div>
+<div class="item">
+<img src="img/2.jpg" alt="Ical RedHat" style="width:100%; border-radius: 4px;">
+<div class="carousel-caption">
+<h3></h3>
+<p></p>
+</div>
+</div>
+<div class="item">
+<img src="img/3.jpg" alt="Ical RedHat" style="width:100%; border-radius: 4px;">
+<div class="carousel-caption">
+<h3></h3>
+<p></p>
+</div>
+</div>
+<div class="item">
+<img src="img/3.jpg" alt="Ical RedHat" style="width:100%; border-radius: 4px;">
+<div class="carousel-caption">
+<h3></h3>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card hovercard">
+<div class="info">
+<div class="title">
+<font color=#31708f>SMP PGRI 1 Kotaagung</font>
+<div class="desc">Jl. Ir. Hi. Juanda Waytuba Kuripan Kotaagung</div>
+<div class="desc">Telephone: (0722) 21005  Kode Pos: 35384</div>
+<div class="desc">Website : www.smppgrikotaagung.sch.id</div>
+<div class="desc">Support by : <a href="https://github.com/T-faces">T-Faces</a></div>
+</div>   
+</div>
+</div>
+</div>
+</div>
+</div>
+$(if chap-id)
+<script type="text/javascript" src="md5.js"></script>
+<script type="text/javascript">
+$('#loginForm').submit(function () {
+var password = $('#inputPassword');
+password.val(hexMD5('$(chap-id)' + password.val() + '$(chap-challenge)'));
+});
+</script>
+$(endif)
+<script>
+$("#menu-toggle").click(function (e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+</script>
+<script type="text/javascript">
+<!--
+document.login.username.focus();
+//-->
+</script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c33568c280f3649d4f3f644/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+</body>
+</html>
+<!-- 
+======================================================
+created     : Lalat Merah
+situs       : gerakanopensource.wordpress.com
+whatsapp    : 082-120-215-248
+ig          : @alpuketmerah
+====================================================== 
+-->
